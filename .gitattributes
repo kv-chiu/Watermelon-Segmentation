@@ -1,1 +1,1 @@
-*.pth filter=lfs diff=lfs merge=lfs -text
+best_aAcc_iter_4000.pth filter=lfs diff=lfs merge=lfs -text
