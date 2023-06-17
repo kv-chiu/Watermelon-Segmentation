@@ -225,7 +225,8 @@ class WatermelonDataset(BaseSegDataset):
     fixed to '.png' for Watermelon dataset.
     """
     METAINFO = dict(
-        classes=('red', 'green', 'white', 'seed-black', 'seed-white', 'Unlabeled'),
+        # The index of the classes element needs to be equal to the grayscale value of the mask
+        classes=('Unlabeled', 'red', 'green', 'white', 'seed-black', 'seed-white'),
         palette=[[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156],
                  [190, 153, 153], [153, 153, 153]])
 
